@@ -317,6 +317,14 @@
     'LBL_BACKGROUND_COLOR' : 'Bakgrunnsfarge',
     'LBL_UNORDERED_LIST'   : 'Uordnet Liste',
     'LBL_SHOW_SIDEBAR' : 'Vis Sidebar',
-    'LBL_SEARCH': 'Søk'
+    'LBL_SEARCH': 'Søk',
+    'LBL_BACKGROUND' : 'Bakgrunn',
+    'LBL_DESKTOP' : 'Skrivebord',
+    'LBL_PANEL' : 'Panel',
+    'LBL_POSITION' : 'Posisjon',
+    'LBL_OPACITY' : 'Gjennomsiktighet',
+    'LBL_ONTOP' : 'Topp',
+    'LBL_ITEMS' : 'Objekter',
+    'LBL_GENERAL' : 'Generelt'
   };
 })();
