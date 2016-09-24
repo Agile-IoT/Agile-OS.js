@@ -59,7 +59,6 @@
 
     WindowManager.apply(this, ['CoreWM', this, args, metadata, defaultSettings(importSettings)]);
 
-    this.scheme           = null;
     this.panels           = [];
     this.switcher         = null;
     this.iconView         = null;
@@ -193,14 +192,6 @@
       });
     }
 
-    function initScheme(icb) {
-      var schemeUrl = API.getApplicationResource('CoreWM', 'scheme.html');
-      self.scheme = GUI.createScheme(schemeUrl);
-      self.scheme.load(function(err) {
-        icb();
-      });
-    }
-
     this.applySettings(this._settings.get());
 
     this._on('vfs', function(msg, obj) {
@@ -229,17 +220,14 @@
       }
     });
 
-    initScheme(function() {
-      self.initSwitcher();
-      self.initDesktop();
-      self.initPanels();
-      self.initIconView();
+    self.initSwitcher();
+    self.initDesktop();
+    self.initPanels();
+    self.initIconView();
 
-      initNotifications();
+    initNotifications();
 
-      cb();
-    });
-
+    cb();
   };
 
   CoreWM.prototype.destroy = function(force) {
@@ -256,9 +244,6 @@
     }
     if ( this.switcher ) {
       this.switcher.destroy();
-    }
-    if ( this.scheme ) {
-      this.scheme.destroy();
     }
 
     // Reset
@@ -277,7 +262,6 @@
     this.$animationLink = Utils.$remove(this.$animationLink);
     this.switcher = null;
     this.iconView = null;
-    this.scheme = null;
 
     return WindowManager.prototype.destroy.apply(this, []);
   };
