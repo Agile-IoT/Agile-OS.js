@@ -1,0 +1,11 @@
+{
+  "className":  "ApplicationNodeRed",
+  "name":       "Agile NodeRed",
+  "description":"A visual tool for wiring the Internet of Things",
+  "mime":       null,
+  "category":   "development",
+  "icon":       "https://raw.githubusercontent.com/node-red/node-red/master/editor/favicon.ico",
+  "preload":    [
+    {"src": "main.js", "type": "javascript"}
+  ]
+}
