@@ -23,9 +23,9 @@
     "Watermark": {
       "enabled": true,
       "lines": [
-        "OS.js %VERSION%",
-        "Copyright &copy; 2011-2016 <a href=\"mailto:andersevenrud@gmail.com\">Anders Evenrud</a>"
-      ]
+            "AGILE OS.js v.0.1",
+            "Copyright &copy; AGILE, OS.js 2016 <a href=\"http://www.agile-iot.eu\">AGILE</a>"
+        ]
     },
 
     "DropboxAPI": {
