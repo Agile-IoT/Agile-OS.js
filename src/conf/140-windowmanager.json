@@ -78,7 +78,7 @@
         },
         "menu": {
           "development": {
-            "icon": "categories/package_development.png",
+            "icon": "categories/agile.png",
             "title": "Agile"
           },
           "education": {
