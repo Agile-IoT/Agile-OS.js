@@ -1,1 +1,0 @@
-# agile-osjs-nodered-dashboard
